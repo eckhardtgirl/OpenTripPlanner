@@ -58,6 +58,7 @@ public class QualifiedMode implements Serializable {
                 req.kissAndRide = true;
             }
             req.modes.setWalk(true); // need to walk after dropping the car off
+            //req.modes.setWalk(false);
         }
     }
 

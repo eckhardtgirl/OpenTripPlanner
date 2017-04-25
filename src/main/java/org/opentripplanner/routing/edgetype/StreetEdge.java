@@ -280,7 +280,7 @@ public class StreetEdge extends Edge implements Cloneable {
                 if ( ! s0.isCarParked() && ! getPermission().allows(TraverseMode.CAR) && currMode == TraverseMode.CAR) {
                     editor = doTraverse(s0, options, TraverseMode.WALK);
                     if (editor != null) {
-                        editor.setCarParked(true); // has the effect of switching to WALK and preventing further car use
+                        //editor.setCarParked(true); // has the effect of switching to WALK and preventing further car use
                         return editor.makeState(); // return only the "parked" walking state
                     }
 
